@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+
+.App {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #f87d0a;
+}
+
+.header {
+  font-family: 'Nanum Gothic', sans-serif;
+  height: 80vh;
+  color: white;
+  background-color: #f87d0a; 
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 100;
+}
+
+.header p {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f9f9f9; 
+  margin: 10px;
+}
+
+.description {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.image-container {
+  flex: 1;
+  height: 200px;
+  border-radius: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contact {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.buttons {
+  font: 'Montserrat';
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  color: black;
+  text-decoration: none;
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.button img {
+  margin-right: 5px;
+  height: 20px;
+  width: auto;
+}
+
+
+
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  main {
+      flex-direction: column;
+  }
+
+  .section {
+      flex-direction: column;
+  }
+
+  .description {
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
+
+  .image-container {
+      height: 150px;
+  }
+}
