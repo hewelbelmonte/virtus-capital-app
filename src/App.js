@@ -102,7 +102,7 @@ function App() {
         </section>
       
         <section className="contact">
-          <h2 style={{fontFamily: 'Nanum Gothic'}}>Nos siga e baixe o app!</h2>
+          <h2 style={{fontFamily: 'Nanum Gothic'}}>Nos siga e baixe o app</h2>
           <div className="buttons">
           <a href="https://www.linkedin.com/in/hewelbelmonte/" target="_blank" rel="noopener noreferrer" className="button">
               <img src="/images/linkedin.png" alt="LinkedIn" />

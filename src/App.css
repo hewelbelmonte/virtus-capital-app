@@ -112,7 +112,6 @@ section{
 
 #expense{
   height: 100vh;
-  
 }
 
 #expense p{
@@ -123,6 +122,14 @@ section{
   border: 1px solid #f87d0a;
   margin: 10px auto;
   width: 30%;
+}
+
+#income > *{
+  margin: 10px;
+}
+
+#income{
+  flex-direction: row-reverse;
 }
 
 #income p{
@@ -211,10 +218,17 @@ section{
 .image-container {
   flex: 1;
   height: 200px;
+  width: 100%;
   border-radius: 10px;
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.imageContainer img {
+  width: 100%;
+  height: auto;
+}
+
 
 .contact {
   background-color: black;
@@ -280,7 +294,6 @@ footer {
     flex-direction: column;
     align-items: center;
   }
-
   #wwa-mission{
     flex-direction: column;
     align-items: center;
@@ -289,16 +302,13 @@ footer {
   main {
       flex-direction: column;
   }
-
   .section {
       flex-direction: column;
   }
-
   .description {
       margin-right: 0;
       margin-bottom: 10px;
   }
-
   .image-container {
       height: 20vh;
   }
