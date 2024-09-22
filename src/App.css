@@ -10,11 +10,12 @@ body{
   margin: 0;
   padding: 0;
   background-color: #f87d0a;
+  overflow-x: hidden;
 }
 
 .header {
   font-family: 'Nanum Gothic', sans-serif;
-  height: 80vh;
+  height: 95vh;
   color: white;
   background-color: #f87d0a; 
   margin: 0;
@@ -32,26 +33,179 @@ body{
   text-align: center;
 }
 
-
 main {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
+section{
+  height: 80vh;
+}
+
+#wwa-mission {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+  background-color: white;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-bottom: 20vh;
+}
+
+#wwa-mission h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  color: #f87d0a;
+}
+
+#wwa-mission hr {
+  border: 1px solid #f87d0a;
+  margin: 10px auto;
+  width: 30%;
+}
+
+#wwa-mission p {
+  color: black;
+  text-align: justify;
+  line-height: 2;
+  margin: 0;
+}
+
+#img{
+  background-image: url('/public/images/grow-individual.jpg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat; 
+  width: 100%; 
+  height: 50vh; 
+  margin-bottom: 20vh;
+}
+
 .section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  border-radius: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  background-color: #ffffff; 
+  margin: 10px auto;
+  margin-bottom: 20vh;
+  height: 95vh;
+  width: 80%;
+  overflow-x: hidden;
+}
+
+#approach{
+  flex-direction: row-reverse;
+  height: 100vh;
+  font-weight: 500;
+}
+
+#approach hr{
+  border: 1px solid #f87d0a;
+  margin: 10px auto;
+  width: 30%;
+}
+
+#expense{
+  height: 100vh;
+  
+}
+
+#expense p{
+  font-weight: 500;
+}
+
+#expense hr{
+  border: 1px solid #f87d0a;
+  margin: 10px auto;
+  width: 30%;
+}
+
+#income p{
+  font-weight: 500;
+}
+
+#income hr{
+  border: 1px solid #f87d0a;
+  margin: 10px auto;
+  width: 30%;
+}
+
+#investment p{
+  font-weight: 500;
+}
+
+#investment hr{
+  border: 1px solid #f87d0a;
+  margin: 10px auto;
+  width: 30%;
+}
+
+.left, .right {
+  flex: 1;
+  max-width: 48%;
+  margin: 0 10px;
+  box-sizing: border-box;
+}
+
+.section h3{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  color: #f87d0a;
+}
+
+.section > hr{
+  border: 1px solid #f87d0a;
+  margin: 10px auto;
+  width: 30%;
+}
+
+.section > p{
+  color: black;
+  text-align: justify;
+  line-height: 2;
+  margin: 0;
+}
+
+.benefits{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 6px;
   background-color: #f9f9f9; 
-  margin: 10px;
+  margin: 10px auto;
+  margin-bottom: 20vh;
+  height: 40vh;
+  max-width: 800px;
+  width: 60%;
+}
+
+.benefits hr{
+  border: 1px solid #f87d0a;
+  margin: 10px auto;
+  width: 30%;
+}
+
+.benefits{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  color: #000000;
 }
 
 .description {
   flex: 1;
   margin-right: 20px;
+  margin-bottom: 10vh;
+  line-height: 1.5;
+  padding: 10px 0;
+  text-align: justify;
 }
 
 .image-container {
@@ -67,6 +221,11 @@ main {
   color: white;
   padding: 20px;
   text-align: center;
+  height: 13vh;
+}
+
+.contact a:visited{
+  color: #000000;
 }
 
 .buttons {
@@ -84,6 +243,7 @@ main {
   background: white;
   padding: 10px;
   border-radius: 5px;
+  width: 120px;
 }
 
 .button img {
@@ -91,9 +251,6 @@ main {
   height: 20px;
   width: auto;
 }
-
-
-
 
 footer {
   background-color: black;
@@ -103,6 +260,32 @@ footer {
 }
 
 @media (max-width: 768px) {
+  #center{
+    flex-direction: column;
+    align-items: center;
+  }
+  #investment{
+    flex-direction: column;
+    align-items: center;
+  }
+  #income{
+    flex-direction: column;
+    align-items: center;
+  }
+  #expense{
+    flex-direction: column;
+    align-items: center;
+  }
+  #approach{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #wwa-mission{
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+  }
   main {
       flex-direction: column;
   }
@@ -117,6 +300,38 @@ footer {
   }
 
   .image-container {
-      height: 150px;
+      height: 20vh;
   }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f9f9f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ff7300;
+  border-radius: 10px;
+  border: 2px solid #f9f9f9;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #fc6500;
+}
+
+#block{
+  display: none;
+}
+
+a{
+  color: #f87d0a;
+  text-decoration: none;
+}
+
+a:visited{
+  color: #f87d0a;
+  text-decoration: none;
 }
