@@ -104,15 +104,15 @@ function App() {
         <section className="contact">
           <h2 style={{fontFamily: 'Nanum Gothic'}}>Nos siga e baixe o app!</h2>
           <div className="buttons">
-          <a href="https://www.linkedin.com/in/hewelbelmonte/" className="button">
+          <a href="https://www.linkedin.com/in/hewelbelmonte/" target="_blank" rel="noopener noreferrer" className="button">
               <img src="/images/linkedin.png" alt="LinkedIn" />
               LinkedIn
             </a>
-            <a href="https://play.google.com/?authuser=0" className="button">
+            <a href="https://play.google.com/?authuser=0" target="_blank" rel="noopener noreferrer" className="button">
               <img src="/images/play-store.jpg" alt="Play Store" />
               Play Store
             </a>
-            <a href="https://apps.apple.com/br/app/apple-store/id375380948" className="button">
+            <a href="https://apps.apple.com/br/app/apple-store/id375380948" target="_blank" rel="noopener noreferrer" className="button">
               <img src="/images/apple-store.png" alt="Apple Store" />
               Apple Store
             </a>
