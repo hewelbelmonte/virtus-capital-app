@@ -1,3 +1,5 @@
+Este projeto da landing page em React é uma proposta de miniprojeto do curso Programadores do Amanhã, do módulo 5.
+
 🔶 Virtus Capital - Landing Page
 Bem-vindo à landing page da Virtus Capital, desenvolvida com React. Este repositório contém o código-fonte da página, que foi projetada para oferecer uma experiência de navegação limpa e objetiva, destacando os principais serviços e diferenciais da Virtus Capital.
 
@@ -8,7 +10,7 @@ A Virtus Capital oferece consultoria financeira personalizada, focada em gerenci
 React - Framework para construção da interface do usuário.
 CSS3 - Para estilização e layout responsivo.
 JavaScript - Para interação e funcionalidades da página.
-
+Axios - Para realizar requisições à Personal Finance API.
 
 🛠️ Como Executar Localmente
 Para rodar o projeto localmente, siga os passos abaixo:
@@ -27,6 +29,8 @@ npm start
 
 A landing page estará disponível em http://localhost:3000.
 
+🌐 API Utilizada
+Utiliza a Personal Finance API em personal-finance-api-wjui.onrender.com para dados de gerenciamento financeiro.
 
 🤝 Contribuições
 Contribuições são bem-vindas! Se você deseja melhorar esta landing page, fique à vontade para abrir uma issue ou enviar um pull request.
